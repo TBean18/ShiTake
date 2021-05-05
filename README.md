@@ -1,6 +1,6 @@
 # Requirements
 
-- People can post Pool Location Revioews
+- People can post Poop Location Revioews
   - Find the Nearest / Best reviewed poop location
 - Public Poops
   - Location, Poop-type, Poop-Time
