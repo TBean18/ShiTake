@@ -10,3 +10,4 @@
   - Who is Currently Pooping
 - Average Poops per day / poop time
 - Post Public Poops
+- Create Poop Groups
