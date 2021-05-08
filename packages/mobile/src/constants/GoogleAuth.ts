@@ -24,13 +24,15 @@ async function signInWithGoogleAsync() {
         accessToken
       );
 
-      //Sign in witht he credential
-      firebase
-        .auth()
-        .signInWithCredential(credential)
-        .catch((err) => {
-          throw err;
-        });
+      //Sign in with the credential
+      await firebase.auth().signInWithCredential(credential);
+
+      //Update user db info
+      const db = firebase.firestore();
+      const user_ID = firebase.auth().currentUser?.uid;
+      db.collection("user").doc(user_ID).set({
+        //Add user info Here
+      });
       return accessToken;
     } else {
       return { cancelled: true };
