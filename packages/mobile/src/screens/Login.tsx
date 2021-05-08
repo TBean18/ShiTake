@@ -4,7 +4,7 @@ import { Text } from "../components/Themed";
 
 const App: FC = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text> Sign In With Google </Text>
     </View>
   );
